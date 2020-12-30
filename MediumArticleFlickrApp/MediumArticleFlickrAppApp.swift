@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MediumArticleFlickrAppApp: App {
+    @ObservedObject var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen(viewModel: viewModel)
         }
     }
+    
 }
