@@ -8,10 +8,13 @@
 import Foundation
 
 class PreviewViewModel: ViewModel {
-    override init() {
-        super.init()
-        self.authenticated = true
-        self.favPhotos = Photo.previewPhotos
-        self.includeRecentPhotos = true
-    }
+//    override init() {
+//        super.init()
+//        self.authenticated = true
+//        self.favPhotos = Photo.previewPhotos
+//        self.includeRecentPhotos = true
+//        self.flickrAuthenticationURLString = "https://www.flickr.com"
+//        self.flickrScreenName = "No ScreenName Available"
+//        self.location =
+//    }
 }

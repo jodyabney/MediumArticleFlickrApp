@@ -11,7 +11,7 @@ struct PhotoCategoryPicker: View {
     @ObservedObject var viewModel: ViewModel
     
     var body: some View {
-        Picker(selection: $viewModel.selectedCategory,
+        Picker(selection: $viewModel.photoCategory,
                label: Text("Photo Category Picker")) {
             Text("Interesting").tag(PhotoCategory.interestingness)
             // only show Recent photos option if enabled

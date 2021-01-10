@@ -22,8 +22,6 @@ struct Photo: Codable, Identifiable {
     @CodableValue var longitude: String // handle Flickr API returning an Int or a String
     @CodableValue var accuracy: String // handle Flickr API returning an Int or a String
     
-//    var isFavorite: Bool = false
-    
     enum CodingKeys: String, CodingKey {
         case title
         case remoteURL = "url_z"
@@ -38,14 +36,6 @@ struct Photo: Codable, Identifiable {
         case longitude
         case accuracy
     }
-    
-//    mutating func addPhotoToFavorites() {
-//        isFavorite = true
-//    }
-//
-//    mutating func removePhotoFromFavorites() {
-//        isFavorite = false
-//    }
     
     // use as preview data for SwiftUI
     static var `default`: Photo {
