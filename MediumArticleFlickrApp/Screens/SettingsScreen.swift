@@ -14,7 +14,7 @@ struct SettingsScreen: View {
     var body: some View {
         Form {
             Section(header: Text("Photo Settings")) {
-                PhotoFetchLimitView()
+                PhotoFetchLimitView(viewModel: viewModel)
                 IncludeRecentPhotosView(viewModel: viewModel)
                 NearbyPhotosView()
             }

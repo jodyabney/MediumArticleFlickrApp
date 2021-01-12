@@ -14,7 +14,7 @@ class ViewModel: ObservableObject {
     
     private var disposables = Set<AnyCancellable>()
     
-    @Published var photoFetchLimit = 100.0
+    @Published var photoFetchLimit = 5.0
     @Published var radiusUnits = "mi"
     @Published var radius = 3.0
     
